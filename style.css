@@ -1,0 +1,53 @@
+body {
+    background-color: #f0f4c3; /* Світлий зелений фон */
+    color: #616161; /* Середньо-сірий колір тексту */
+    font-size: 16px; /* Розмір шрифту для тексту */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    line-height: 1.6; /* Висота лінії тексту */
+    margin: 0;
+    padding: 20px; /* Внутрішній відступ для всіх сторін */
+}
+
+h1 {
+    color: #33691e; /* Темно-зелений колір для заголовків h1 */
+    margin-left: 20px; /* Відступ зліва */
+    font-size: 32px; /* Розмір шрифту для заголовків */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Легка тінь для тексту */
+    padding-bottom: 10px; /* Відступ знизу для заголовку */
+    animation: float 3s ease-in-out infinite; /* Анімація "плаваючого" ефекту */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+p {
+    margin: 20px 0; /* Відступи для параграфів */
+    text-align: justify; /* Вирівнювання тексту по ширині */
+    font-size: 18px; /* Розмір шрифту для параграфів */
+}
+
+a {
+    color: #1b5e20; /* Темно-зелений колір для посилань */
+    text-decoration: none; /* Без підкреслення */
+    font-weight: bold; /* Жирний шрифт */
+    padding: 5px 10px; /* Відступи навколо тексту посилання */
+    border-radius: 5px; /* Закруглення країв */
+    transition: all 0.3s ease; /* Плавна зміна всіх переходів */
+    border: 1px solid transparent; /* Прозора рамка для початкового стану */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Тінь для кращого виділення */
+    background-color: #fff8dc; /* Світлий кремовий фон для посилань */
+}
+
+a:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+    color: #4caf50; /* Світліший зелений колір при наведенні */
+    background-color: #f0e68c; /* Хакі колір при наведенні */
+    border: 1px solid #4caf50; /* Зелена рамка при наведенні */
+    transform: translateY(-2px); /* Піднімання посилання при наведенні */
+}
